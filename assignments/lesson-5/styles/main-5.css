@@ -5,29 +5,71 @@
 
 body {
   font-size: 16px;
-  ____________  /* Declare the base font-family */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  /* Declare the base font-family */
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {}
-header h1 {}
+header {
+  background-color: #29524a;
+}
+header h1 {
+  color: white;
+  font-size: 2.5em;
+}
 header img {}
-header .subheading {}
+header .subheading {
+  color: white;
+  font-size: 2.25em;
+}
 
-nav {}
+nav {
+  background-color: #94a187;
+  font-size:1.75em;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #94a187;
+  
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li.active a {
+  background-color: #7cb4b8;
+}
+nav ul li a:hover {
+  background-color: #7cb4b8
+}
 
 main {}
-main h2 {}
+main h2 {
+  color: #29524a;
+  font-size: 2em
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
-footer {}
+footer {
+  background-color: #7cb4b8
+}
+
+p {
+  font-family: 'segoe ui light'
+}
