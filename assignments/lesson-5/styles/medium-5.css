@@ -15,7 +15,3 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  /* Declare the base font-family */
     text-align: center;
   }
-  
-  header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-  }
