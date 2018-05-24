@@ -4,12 +4,13 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  /* Declare the base font-family */
+  text-align: center;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 300px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
@@ -18,19 +19,20 @@ header {
 header h1 {
   color: white;
   font-size: 2.5em;
+  text-align: center;
 }
-header img {}
+header img {
+  float: center;
+}
 header .subheading {
   color: white;
   font-size: 2.25em;
+  text-align: center;
 }
 
 nav {
   background-color: #94a187;
   font-size:1.75em;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 nav button {}
 nav ul {
@@ -42,7 +44,7 @@ nav ul {
   
 }
 nav ul li {
-  float: left;
+  float: center;
 }
 nav ul li a {
   display: block;
@@ -71,5 +73,8 @@ footer {
 }
 
 p {
-  font-family: 'segoe ui light'
+  font-family: 'segoe ui light,Tahoma, Geneva, Verdana, sans-serif' 
+}
+.forecast {
+  display: none;
 }

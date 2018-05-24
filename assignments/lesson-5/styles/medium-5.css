@@ -1,9 +1,21 @@
-@media only screen and (min-width: ___________) {
+@media only screen and (min-width: 600px) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
+    section.forecast {display:inline}  /* show the 10-day forecast with the medium view and up */
 
+  
+  
+  }
+
+  body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  /* Declare the base font-family */
+    text-align: center;
+  }
+  
+  header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
   }
