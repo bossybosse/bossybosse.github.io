@@ -1,48 +1,51 @@
 /* Delete these CSS comments after reading. */
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;} /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Declare the base font-family */
+  font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;  /* Declare the base font-family */
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */ 
+  max-width: 600px;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  position: relative;
 }
+
 
 header {
   background-color: #29524a;
+  padding: 25px;
 }
 header h1 {
   color: white;
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-align: center;
 }
 header img {
   float: center;
-  margin: auto;
+
 }
 header .subheading {
   color: white;
-  font-size: 2.25em;
+  font-size: 1.25em;
   text-align: center;
 }
 
 nav {
-  background-color: #94a187;
-  font-size:1.75em;
+  font-size:1.15em;
 }
 nav button {}
+
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #94a187;
-  
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;  
 }
 nav ul li {
   float: center;
@@ -51,8 +54,11 @@ nav ul li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px auto;
+  background-color: #94a187;
+  border-color: black;
+  border-style: solid;
 }
 nav ul li.active a {
   background-color: #7cb4b8;
@@ -61,11 +67,69 @@ nav ul li a:hover {
   background-color: #7cb4b8
 }
 
-main {}
+main {margin: auto;}
+
 main h2 {
   color: #29524a;
-  font-size: 2em
+  font-size: 1.25em;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
+
+main h3 {
+  color: #94a187;
+  font-size: 1.1em;
+}
+main .weather-summary{
+  position: relative;
+  vertical-align: middle;
+  border-color: black;
+  border-style: solid;
+  max-width: 500px;
+  margin: auto;
+  min-height: 175px;
+}
+
+main .weather-summary h3 {
+  position: relative;
+  display: block;
+  border-color: purple;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+}
+
+main .weather-summary .current{
+  position: absolute;
+  width:  50%;
+  max-height: 100px;
+  border-color: red;
+  border-style: solid;
+}
+
+main .weather-summary .current img{
+  width:  50%;
+}
+
+main .weather-summary .highlow {
+  position: relative;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  border-color: blue;
+  border-style: solid;
+}
+
+main .weather-summary .conditions {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  border-color: yellow;
+  height: 50%;
+  border-style: solid;
+}
+
+
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
@@ -73,9 +137,15 @@ footer {
   background-color: #7cb4b8
 }
 
-p {
-  font-family: 'segoe ui light,Tahoma, Geneva, Verdana, sans-serif' 
-}
-.forecast {
+main .forecast {
   display: none;
+}
+
+main article {
+  margin: 10px;
+  margin-top: 30px;
+}
+main img {
+  width: 80%;
+
 }
