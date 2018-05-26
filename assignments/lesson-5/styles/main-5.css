@@ -7,12 +7,12 @@ body {
   font-size: 14px;
   font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;  /* Declare the base font-family */
   text-align: center;
+  background: rgb(199, 188, 31) solid;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */ 
   max-width: 600px;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
-
 
 header {
   background-color: #29524a;
@@ -22,11 +22,8 @@ header {
 }
 header h1 {
   color: white;
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-align: center;
-}
-header img {
-  
 }
 
 header .subheading {
@@ -37,14 +34,12 @@ header .subheading {
 
 nav {
   font-size:1.15em;
-  
 }
-nav button {}
 
 nav ul {
   list-style-type: none;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   overflow: hidden;  
 }
 nav ul li {
@@ -55,7 +50,7 @@ nav ul li a {
   color: black;
   text-align: center;
   padding: 10px 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   background-color: #94a187;
   border-color: black;
   border-style: solid;
@@ -68,7 +63,10 @@ nav ul li a:hover {
   background-color: #7cb4b8
 }
 
-main {}
+main {
+  padding: 0% 20px;
+  margin: auto;
+}
 
 main h2 {
   color: #29524a;
@@ -86,13 +84,15 @@ main .weather-summary{
   vertical-align: middle;
   border-color: black;
   border-style: solid;
-  max-width: 500px;
-  margin: auto;
+  max-width: 300px;
   min-height: 175px;
+  padding: auto;
+  margin: auto;
 }
 
-main .weather-summary h3 {
+main .weather-summary .Weather-Summary-Header {
   position: relative;
+  background: #29524a;
   display: block;
   border-color: purple;
   border-style: solid;
@@ -100,16 +100,25 @@ main .weather-summary h3 {
   padding: 0;
 }
 
+main .weather-summary .Weather-Summary-Header h3 {
+  color: white;
+}
+
 main .weather-summary .current{
   position: absolute;
   width:  50%;
-  max-height: 100px;
+  height: 100%;
   border-color: red;
   border-style: solid;
+  
+  
 }
 
 main .weather-summary .current img{
-  width:  50%;
+  display: inline-block;
+  margin: auto;
+  padding: auto;
+  vertical-align: middle;
 }
 
 main .weather-summary .highlow {
@@ -130,23 +139,28 @@ main .weather-summary .conditions {
   border-style: solid;
 }
 
-
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
-
-footer {
-  background-color: #7cb4b8
+main figure { 
+  margin: 0 0 .2rem 2%; width:96%;
 }
 
 main .forecast {
   display: none;
+  position: relative;
 }
 
 main article {
-  margin: 10px;
+  position: relative;
   margin-top: 30px;
+}
+
+main article p{
+  text-align: justify;
 }
 main img {
   width: 80%;
-
+}
+footer {
+  background-color: #7cb4b8;
+  position: relative;
+  width: 100%;
 }
