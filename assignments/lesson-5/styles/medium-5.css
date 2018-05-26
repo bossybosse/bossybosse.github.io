@@ -1,7 +1,4 @@
 @media only screen and (min-width: 600px) {
-
-
-
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
@@ -9,15 +6,33 @@
     header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
       max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
-    header img {
-      position: absolute;
-      left: 20px;
-      margin: auto;
+  
+    header {
+      min-height: 250px;
+      position: relative;
     }
-    
+
+    header  img {
+      float: left;
+      width: 20%;
+      margin-left: 5%;
+      height: 200px;
+      width: auto;
+    }    
+
+    header h1 {
+      position: relative;
+      margin-top: 60px;
+    }
+
+    header .subheading {
+      position: relative;
+    }
+
     nav {
       background-color: #94a187;
     }
+
     nav ul {
       list-style-type: none;
       margin: 0;
