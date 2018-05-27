@@ -1,18 +1,14 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;} /* This wildcard applies to all elements ensuring a box layout model */
-
+* { box-sizing: border-box;}
 body {
   font-size: 14px;
-  font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;  /* Declare the base font-family */
-  text-align: center;
+  font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;  text-align: center;
   background: rgb(199, 188, 31) solid;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */ 
-  max-width: 600px;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-  padding: auto;
+header, nav, main, footer { 
+  max-width: 600px;
+    padding: auto;
   margin: auto;
 }
 
@@ -69,6 +65,7 @@ main {
   padding: 0% 20px;
   margin: auto;
   display: block;
+  position: relative;
 }
 
 main h2 {
@@ -88,8 +85,7 @@ main .weather-summary{
   border: black solid;
   max-width: 300px;
   min-height: 225px;
-  padding: auto;
-  margin: auto;
+  margin: auto auto 30px auto;
 }
 
 main .weather-summary .Weather-Summary-Header {
@@ -108,6 +104,7 @@ main .weather-summary .current{
   position: absolute;
   width:  50%;
   height: 100%;
+  max-height: 173px;
 }
 
 main .weather-summary .current img{
@@ -115,6 +112,7 @@ main .weather-summary .current img{
   margin: auto;
   padding: auto;
   vertical-align: middle;
+  
 }
 
 main .weather-summary .highlow {
@@ -143,7 +141,7 @@ main .forecast {
 
 main article {
   position: relative;
-  margin-top: 30px;
+  
 }
 
 main article p{
@@ -156,4 +154,11 @@ footer {
   background-color: #7cb4b8;
   position: relative;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+footer .contact{
+  padding-bottom: 5px
 }

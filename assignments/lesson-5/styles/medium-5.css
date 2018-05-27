@@ -1,10 +1,8 @@
 @media only screen and (min-width: 600px) {
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-    
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-      max-width: 900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+      max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
   
     body{ font-size:16px;}
@@ -56,29 +54,30 @@
     }
     
     main .weather-summary {
-      float: left;
-      min-width: 200px;
-      padding: auto;
+      display: inline-block;
+      width: 300px;
       margin: auto;
     }
 
     section.forecast {
-      float: right;
-      top: 40px;
-      display:inline-block;
-      border: blue solid;
-    }  /* show the 10-day forecast with the medium view and up */
-
-    
-    main article {
-    clear: both;
+      margin-left: 4%;
+      margin-right: 4%;
+      display: inline-block;
+      vertical-align: middle;
     }
+
     main article img{
       float: right;
       width: 50%;
       max-width: 600px;
+      margin-left: 5%;
+      
+    }
+    main article {
+      min-height: 23rem;
     }
     footer {
       clear: both;
+      margin-top: 10px;
     }
   }
