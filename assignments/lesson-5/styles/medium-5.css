@@ -38,7 +38,6 @@
 
     nav ul {
       list-style-type: none;
-      position: -webkit-sticky; /* Safari */
       position: sticky;
       margin: 0;
       overflow: hidden;
