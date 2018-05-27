@@ -3,6 +3,7 @@
 body {
   font-size: 14px;
   font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;  text-align: center;
+  margin: auto;
 }
 
 header, nav, main, footer { 
