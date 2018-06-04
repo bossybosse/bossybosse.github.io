@@ -1,0 +1,188 @@
+* { box-sizing: border-box;}
+
+body {
+  font-size: 14px;
+  font-family: 'Oxygen', sans-serif;  text-align: center;
+  margin: auto;
+}
+
+header, nav, main, footer { 
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  background-color: #29524a;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+header h1 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header .subheading {
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+nav button  {
+  background-color: #94a187;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+nav button  {
+  background-color: #94a187;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+  padding-top: 5px;
+  font-size:1.15em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+  overflow: hidden;  
+}
+.navigation li { 
+  display: none; 
+}
+
+.navigation.responsive { 
+  position: relative; 
+}
+
+.navigation.responsive li {
+  display: block;
+}
+
+nav ul li {
+  float: center;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  background-color: #94a187;
+  border-color: black;
+  border-style: solid;
+  text-decoration: none;
+}
+nav ul li.active a {
+  background-color: #7cb4b8;
+}
+nav ul li a:hover {
+  background-color: #7cb4b8;
+}
+
+main {
+  padding: 0% 20px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+main h2 {
+  color: #29524a;
+  font-size: 1.25em;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+main h3 {
+  color: #94a187;
+  font-size: 1.1em;
+}
+main .weather-summary{
+  position: relative;
+  vertical-align: middle;
+  border: black solid;
+  max-width: 300px;
+  min-height: 225px;
+  margin: auto auto 30px auto;
+}
+
+main .weather-summary .Weather-Summary-Header {
+  position: relative;
+  background: #29524a;
+  display: block;
+  padding: 5%;
+}
+
+main .weather-summary .Weather-Summary-Header h3 {
+  color: white;
+  margin: 0px;
+}
+
+main .weather-summary .current{
+  position: absolute;
+  width:  50%;
+  height: 100%;
+  max-height: 173px;
+}
+
+main .weather-summary .current img{
+  display: inline-block;
+  margin: auto;
+  vertical-align: middle;
+  
+}
+
+main .weather-summary .highlow {
+  position: relative;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+
+}
+
+main .weather-summary .conditions {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+main figure { 
+  margin: 0 0 .2rem 2%; width:96%;
+}
+
+main .forecast {
+  display: none;
+  position: relative;
+}
+
+main article {
+  position: relative;
+  
+}
+
+main article p{
+  text-align: justify;
+}
+main img {
+  width: 80%;
+}
+footer {
+  background-color: #7cb4b8;
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+footer .contact{
+  padding-bottom: 5px
+}

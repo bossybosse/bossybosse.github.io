@@ -1,0 +1,87 @@
+@media only screen and (min-width: 610px) {
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+      max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    }
+  
+    body{ font-size:16px;}
+
+    header {
+      min-height: 250px;
+      position: relative;
+    }
+
+    header  img {
+      float: left;
+      width: 20%;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 200px;
+      width: auto;
+    }    
+
+    header h1 {
+      position: relative;
+      margin-top: 60px;
+      margin-right: 5%;
+    }
+
+    header .subheading {
+      position: relative;
+      margin-right: 5%;
+    }
+
+    nav {
+      background-color: #94a187;
+      padding-top: 0px;
+    }
+
+    .navigation li { 
+      display: inline-block;
+    }
+    nav ul {
+      list-style-type: none;
+      position: sticky;
+      margin: 0;
+      overflow: hidden;
+      display: inline-block;
+    }
+    nav ul li {
+      display: inline-block;
+      background-color: #94a187;
+      
+    }
+    nav ul li a {
+      margin: 0;
+      border:none;
+    }
+    
+    main .weather-summary {
+      display: inline-block;
+      width: 300px;
+      margin: auto;
+    }
+
+    section.forecast {
+      margin-left: 4%;
+      margin-right: 4%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    main article img{
+      float: right;
+      width: 50%;
+      max-width: 600px;
+      margin-left: 5%;
+      
+    }
+    main article {
+      min-height: 23rem;
+    }
+    footer {
+      clear: both;
+      margin-top: 10px;
+    }
+  }
